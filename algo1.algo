@@ -1,0 +1,14 @@
+ALGORITHM algo1
+VAR
+    tab1 : ARRAY_OF INTEGER[length];
+    tab2 : ARRAY_OF INTEGER[length];
+    i,j, sum : INTEGER
+BEGIN
+    FOR i FROM 0 TO tab1.length STEP -1  DO
+        FOR j FROM 0 TO tab2.length STEP -1 DO
+            IF (tab1[i] = tab2[j]) THEN
+                sum := sum + tab1[i] * 2
+            END_IF
+        END_FOR
+    END_FOR
+END

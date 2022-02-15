@@ -1,0 +1,24 @@
+ALGORITHM algo3
+VAR
+    hash :HASH_TABLE <INTEGER,INTEGER>
+    tab1 : ARRAY_OF INTEGER[length];
+    tab2 : ARRAY_OF INTEGER[length];
+    i,j,sum : INTEGER
+BEGIN
+    FOR i FROM 0 TO tab1.length STEP -1  DO
+        hash.insert(tab[i], 1)
+    END_FOR
+    FOR j FROM 0 TO tab2.length STEP -1  DO
+        IF (hash.lookup (tab2[j] = true)) THEN
+            hash.insert (tab2[j], 2)
+        Else
+            hash.insert (tab2[j], 1)
+        END_IF
+    END_FOR
+    FOR i FROM 0 TO tab1.length STEP -1  DO
+        IF (hash.get (tab[i])=2) THEN
+            sum := sum + tab[i] *2
+        END_IF
+    END_FOR
+    
+END
